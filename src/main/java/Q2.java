@@ -23,7 +23,7 @@ public class Q2 {
 
 	public static void execute() {
 		// For each company, the name and the number of employees.
-		MongoClient client = new MongoClient("10.4.41.144");
+		MongoClient client = new MongoClient("host");
 		MongoDatabase database = client.getDatabase("bdm_lab3_training");
 		MongoCollection<Document> companyCollection = database.getCollection("company");
 
