@@ -19,7 +19,7 @@ public class Q1 {
 
 	public static void execute() {
 		// For each person, its name an its company name
-		MongoClient client = new MongoClient("10.4.41.144");
+		MongoClient client = new MongoClient("host");
 		MongoDatabase database = client.getDatabase("bdm_lab3_training");
 		MongoCollection<Document> personCollection = database.getCollection("person");
 
