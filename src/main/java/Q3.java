@@ -9,7 +9,7 @@ import java.util.List;
 public class Q3 {
     public static void execute() {
         // For each company, the name and the number of employees.
-        MongoClient client = new MongoClient("10.4.41.144");
+        MongoClient client = new MongoClient("host");
         MongoDatabase database = client.getDatabase("test");
         MongoCollection<Document> companyCollection = database.getCollection("restaurants");
 
