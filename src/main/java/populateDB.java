@@ -18,7 +18,7 @@ public class populateDB {
 	public static void populate(int N) {
 		Fairy fairy = Fairy.create();
 
-		MongoClient client = new MongoClient("10.4.41.144");
+		MongoClient client = new MongoClient("host");
 		MongoDatabase database = client.getDatabase("bdm_lab3");
 		MongoCollection<Document> personCollection = database.getCollection("person");
 		MongoCollection<Document> companyCollection = database.getCollection("company");
